@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F13A2173268CBC5F008A86E6 /* StoryPromptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13A2172268CBC5F008A86E6 /* StoryPromptViewController.swift */; };
+		F13A2176268CEC67008A86E6 /* StoryPromptTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13A2175268CEC67008A86E6 /* StoryPromptTableViewController.swift */; };
 		F1CF9B14268BD2EA00B99846 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CF9B13268BD2EA00B99846 /* AppDelegate.swift */; };
 		F1CF9B16268BD2EA00B99846 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CF9B15268BD2EA00B99846 /* SceneDelegate.swift */; };
-		F1CF9B18268BD2EA00B99846 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CF9B17268BD2EA00B99846 /* ViewController.swift */; };
+		F1CF9B18268BD2EA00B99846 /* AddStoryPromptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CF9B17268BD2EA00B99846 /* AddStoryPromptViewController.swift */; };
 		F1CF9B1B268BD2EA00B99846 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1CF9B19268BD2EA00B99846 /* Main.storyboard */; };
 		F1CF9B1D268BD2EB00B99846 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1CF9B1C268BD2EB00B99846 /* Assets.xcassets */; };
 		F1CF9B20268BD2EB00B99846 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1CF9B1E268BD2EB00B99846 /* LaunchScreen.storyboard */; };
+		F1CF9B2A268BE1B400B99846 /* StoryPromptEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CF9B28268BE1B300B99846 /* StoryPromptEntry.swift */; };
+		F1CF9B2B268BE1B400B99846 /* StoryPrompts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CF9B29268BE1B300B99846 /* StoryPrompts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F13A2172268CBC5F008A86E6 /* StoryPromptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPromptViewController.swift; sourceTree = "<group>"; };
+		F13A2175268CEC67008A86E6 /* StoryPromptTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryPromptTableViewController.swift; sourceTree = "<group>"; };
 		F1CF9B10268BD2EA00B99846 /* StoryPrompt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryPrompt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1CF9B13268BD2EA00B99846 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1CF9B15268BD2EA00B99846 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F1CF9B17268BD2EA00B99846 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F1CF9B17268BD2EA00B99846 /* AddStoryPromptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStoryPromptViewController.swift; sourceTree = "<group>"; };
 		F1CF9B1A268BD2EA00B99846 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F1CF9B1C268BD2EB00B99846 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1CF9B1F268BD2EB00B99846 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1CF9B21268BD2EB00B99846 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1CF9B28268BE1B300B99846 /* StoryPromptEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryPromptEntry.swift; sourceTree = "<group>"; };
+		F1CF9B29268BE1B300B99846 /* StoryPrompts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryPrompts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +45,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F13A2174268CBC80008A86E6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F13A2175268CEC67008A86E6 /* StoryPromptTableViewController.swift */,
+				F13A2172268CBC5F008A86E6 /* StoryPromptViewController.swift */,
+				F1CF9B17268BD2EA00B99846 /* AddStoryPromptViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		F1CF9B07268BD2EA00B99846 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +74,25 @@
 		F1CF9B12268BD2EA00B99846 /* StoryPrompt */ = {
 			isa = PBXGroup;
 			children = (
+				F13A2174268CBC80008A86E6 /* ViewControllers */,
+				F1CF9B27268BE0ED00B99846 /* Models */,
 				F1CF9B13268BD2EA00B99846 /* AppDelegate.swift */,
 				F1CF9B15268BD2EA00B99846 /* SceneDelegate.swift */,
-				F1CF9B17268BD2EA00B99846 /* ViewController.swift */,
 				F1CF9B19268BD2EA00B99846 /* Main.storyboard */,
 				F1CF9B1C268BD2EB00B99846 /* Assets.xcassets */,
 				F1CF9B1E268BD2EB00B99846 /* LaunchScreen.storyboard */,
 				F1CF9B21268BD2EB00B99846 /* Info.plist */,
 			);
 			path = StoryPrompt;
+			sourceTree = "<group>";
+		};
+		F1CF9B27268BE0ED00B99846 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F1CF9B28268BE1B300B99846 /* StoryPromptEntry.swift */,
+				F1CF9B29268BE1B300B99846 /* StoryPrompts.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +165,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1CF9B18268BD2EA00B99846 /* ViewController.swift in Sources */,
+				F13A2176268CEC67008A86E6 /* StoryPromptTableViewController.swift in Sources */,
+				F13A2173268CBC5F008A86E6 /* StoryPromptViewController.swift in Sources */,
+				F1CF9B2B268BE1B400B99846 /* StoryPrompts.swift in Sources */,
+				F1CF9B18268BD2EA00B99846 /* AddStoryPromptViewController.swift in Sources */,
 				F1CF9B14268BD2EA00B99846 /* AppDelegate.swift in Sources */,
+				F1CF9B2A268BE1B400B99846 /* StoryPromptEntry.swift in Sources */,
 				F1CF9B16268BD2EA00B99846 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +319,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XRC983479Z;
 				INFOPLIST_FILE = StoryPrompt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -305,6 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XRC983479Z;
 				INFOPLIST_FILE = StoryPrompt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
